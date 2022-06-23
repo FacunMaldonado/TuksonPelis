@@ -8,8 +8,10 @@
     width:100rem;
 } */
 
+
+
 .nav {
-    position: fixed;
+    position: relative;
     width: 100vw;
     height: 160px;
     top: 0;
@@ -87,26 +89,48 @@ nav li a:hover{
     inherits: false;
   }
   
-  :root {
-    --card-height: 65vh;
-    --card-width: calc(var(--card-height) / 1.5);
-  }
   
-  body {
-    min-height: 100vh;
-    background: #212534;
+  .cartas{
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
-    padding-top: 3rem;
-    box-sizing: border-box;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
+
+  }
+
+  body{
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+
+    animation: spin 4s linear infinite;
+  }
+
+  .main {
+    overflow: hidden;
+    width: 100vw;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+    animation: spin 2.5s linear infinite;
+    height: 100%;
   }
   
   .card {
-    margin: 2rem;
     background: #191c29;
-    width: var(--card-width);
-    height: var(--card-height);
+    width: 350px;
+    height: 400px;
     padding: 3px;
     position: relative;
     border-radius: 6px;
@@ -191,11 +215,6 @@ nav li a:hover{
 
 /* MOBILE */
 @media (max-width: 768px) {
-
-.header {
-    height: 60px;
-    }
-
     .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -234,7 +253,6 @@ nav li a:hover{
         outline: none;
     }
 }
-
 /* FIN MOBILE */
 
 
