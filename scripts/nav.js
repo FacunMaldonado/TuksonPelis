@@ -1,12 +1,6 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu_visible");
-
-if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-} else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-}
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+  $(this).parent(".sub-menu").children("ul").slideToggle("200");
+  $(this).find("i.fa").toggleClass("fa-angle-up fa-angle-down");
 });

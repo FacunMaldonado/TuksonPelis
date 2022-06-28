@@ -4,143 +4,113 @@
     box-sizing: border-box;
 }
 
-.nav {
-    position: relative;
-    width: 100vw;
-    height: 160px;
-    top: 0;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    /* flex-direction: column; */
-    gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.829);
-    z-index: 10000;
+.header{
+  position: relative;
+  height: 150px;
+  width: 100%;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
+nav {
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000000;
+  z-index: 99999;
 }
-
-.logo img{
-    height: 5rem;
-    filter: drop-shadow(1px 1px 20px rgba(247, 247, 247, 0.767));
-    border: 1px red solid;
+nav ul {
+  background: #000000;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
 }
-
-.nav-menu {
-    display: flex;
-    border: 1px red solid;
-    list-style: none;
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  text-align: center;
 }
-
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    text-transform: uppercase;
+nav ul li:first-child a {
+  background: #000000;
+  width: 49px;
+  padding: 15px 0;
 }
-
-.nav-menu-link {
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
+nav ul li:last-child {
+  margin: 0;
 }
-
-.nav-menu-link:hover,
-.nav-menu-link_active {
-    transition: 0.5s;
+nav ul li a {
+  display: block;
+  background: #000000;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.2s linear;
 }
-
-
-  /* TOGGLE */
-.nav-toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-    display: none;
+nav ul li a:hover {
+  background: #37bc9b;
 }
-
-
-nav li a:hover{
-    color: red;
-  /* text-shadow: 2px 2px 5px rgb(255, 255, 255); */
-    filter: drop-shadow(1px 1px 20px rgba(255, 255, 255, 0.767));
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 240px;
+  border-bottom: 4px solid #48cfad;
+}
+nav ul li ul li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+nav ul li ul li a {
+  display: block;
+  background: #000000;
+  padding: 10px 15px;
+}
+nav ul li ul li a:first-child {
+  background: #000000;
+  width: auto;
+  border-left: 4px solid transparent;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+nav ul li ul li a:hover {
+  background: #000000;
+  border-left: 4px solid #48cfad;
 }
 
 body {
-  min-height: 100vh;
-  background: #212534;
-  align-items: center;
-  flex-direction: column;
+  background: rgb(1, 1, 1);
 }
 
-main {
-  background: linear-gradient(
-      var(--rotate),
-      #5ddcff,
-      #3c67e3 43%,
-      #4e00c2
-    );
-    /* opacity: 1; */
-    /* transition: opacity 0.5s; */
-    animation: spin 2.5s linear infinite;
+.contenedorTop5{
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.textTop5 p{
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  align-items: center;
 }
 
 /*CARTAS*/
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
 
 .ContainerCards{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
-  background: linear-gradient(
-      var(--rotate),
-      #5ddcff,
-      #3c67e3 43%,
-      #4e00c2
-    );
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 3s linear infinite;
-}
-
-.card {
-  background: #191c29;
-  width: 350px;
-  height: 400px;
-  padding: 3px;
-  position: relative;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  font-family: cursive;
-  overflow: hidden;
-  margin: 1rem;
-  padding: 0.5rem;
+  gap: 4rem;
 }
 
 .card img{
@@ -153,6 +123,91 @@ main {
   font-size: 1.5rem;
   color: white;
 }
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card {
+  background: #191c29;
+  width: 300px;
+  height: 400px;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
 /*FIN CARTAS*/
 
 /* MOBILE */
