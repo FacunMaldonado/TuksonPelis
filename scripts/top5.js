@@ -13,11 +13,11 @@ class Pelicula{
 
 const Top5 = [];
 
-Top5.push(new Pelicula(1,"P1","Terror","./images/comedia.jpg", "1:30 hs"));
-Top5.push(new Pelicula(2,"P2","Terror","./images/comedia.jpg", "1:30 hs"));
-Top5.push(new Pelicula(3,"P3","Terror","./images/comedia.jpg", "1:50 hs"));
-Top5.push(new Pelicula(4,"P4","Terror","./images/comedia.jpg", "1:30 hs"));
-Top5.push(new Pelicula(5,"P5","Terror","./images/comedia.jpg", "1:30 hs"));
+Top5.push(new Pelicula(1,"P1","Terror","./images/prueba.jpg", "1:30 hs"));
+Top5.push(new Pelicula(2,"P2","Terror","./images/prueba.jpg", "1:30 hs"));
+Top5.push(new Pelicula(3,"P3","Terror","./images/prueba.jpg", "1:50 hs"));
+Top5.push(new Pelicula(4,"P4","Terror","./images/prueba.jpg", "1:30 hs"));
+Top5.push(new Pelicula(5,"P5","Terror","./images/prueba.jpg", "1:30 hs"));
 
 
 let containerCards = document.querySelector('.ContainerCards');
