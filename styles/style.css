@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+.condiciones{
+  background-color: rgba(20, 18, 18, 0.966);
+  width: 100%;
+  height: 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  visibility: visible;
+}
+
+.boxCondiciones_active{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.condiciones button{
+
+  width: 10rem;
+  height: 2rem;
+}
+
 /*  ======== PRE LOAD  ========*/
 
 .preload{
@@ -18,7 +46,6 @@
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  
 }
 
 /* clase que crea js para que se cierra */
