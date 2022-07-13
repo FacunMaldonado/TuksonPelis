@@ -1069,7 +1069,7 @@ nav {
   align-items: center;
   width: 100%;
   background: #000000;
-  z-index: 99999;
+  /* z-index: 99999; */
 }
 nav ul {
   background: #000000;

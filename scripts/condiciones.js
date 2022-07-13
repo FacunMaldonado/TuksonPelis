@@ -7,6 +7,13 @@ const condiciones =  () => {
         ok = true;
         localStorage.setItem('terminos', ok);
         box.classList.add('boxCondiciones_active')
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Terminos y condiciones ACEPTADAS',
+          showConfirmButton: false,
+          timer: 1500,
+        })
     })
   if (localStorage.getItem('terminos') == 'true'){
     box.style.display = 'none'
