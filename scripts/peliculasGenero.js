@@ -13,15 +13,16 @@ class Pelicula{
 
 const Peliculas = [];
 
-Peliculas.push(new Pelicula(1,"P1","Terror","../images/prueba.jpeg", "1:30 hs"));
-Peliculas.push(new Pelicula(2,"P2","Suspenso","../images/prueba.jpeg", "1:30 hs"));
-Peliculas.push(new Pelicula(3,"P3","Suspenso","../images/prueba.jpeg", "1:50 hs"));
-Peliculas.push(new Pelicula(4,"P4","Terror","../images/prueba.jpeg", "1:30 hs"));
-Peliculas.push(new Pelicula(5,"P5","Terror","../images/prueba.jpeg", "1:30 hs"));
-Peliculas.push(new Pelicula(6,"P6","Comedia","../images/comedia.jpg", "1:30 hs"));
-Peliculas.push(new Pelicula(7,"P7","Comedia","../images/comedia.jpg", "1:30 hs"));
+Peliculas.push(new Pelicula(1,"P1","Terror","../images/prueba.jpeg", "1:46 hs"));
+Peliculas.push(new Pelicula(2,"P2","Suspenso","../images/prueba.jpeg", "1:45 hs"));
+Peliculas.push(new Pelicula(3,"P3","Suspenso","../images/prueba.jpeg", "1:16 hs"));
+Peliculas.push(new Pelicula(4,"P4","Terror","../images/prueba.jpeg", "1:40 hs"));
+Peliculas.push(new Pelicula(5,"P5","Terror","../images/prueba.jpeg", "2:30 hs"));
+Peliculas.push(new Pelicula(6,"P6","Comedia","../images/comedia.jpg", "1 hs"));
+Peliculas.push(new Pelicula(7,"P7","Comedia","../images/comedia.jpg", "1:50 hs"));
 Peliculas.push(new Pelicula(8,"P8","Comedia","../images/comedia.jpg", "1:30 hs"));
 
+const PelisJSON = JSON.stringify(Peliculas);
 
 
 
@@ -52,3 +53,4 @@ function filtrarGenero (Peliculas){
 }
 
 filtrarGenero(Peliculas);
+
