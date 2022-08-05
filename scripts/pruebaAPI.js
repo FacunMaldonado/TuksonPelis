@@ -1,9 +1,11 @@
 //FALTA PROBAR
 
 const  API_URL = 'https://omdbapi.com/?apikey=2d4bbd2a&';
+const containerCards = document.querySelector('.ContainerCards')
+const botonBuscar = document.getElementById('boton-para-buscar-pelicula')
 
 const generarCartaEnHTML = (data) => {
-    containerCards.innerHTML += `<div id = '${data.imdbID}' class="card">
+    containerCards.innerHTML = `<div id = '${data.imdbID}' class="card">
                                     <img src="${data.Poster}" alt="Pelicula foto">
                                     <p>${data.Title}</p>
                                     <p>${data.Runtime}</p>
@@ -11,7 +13,8 @@ const generarCartaEnHTML = (data) => {
 }
 
 
-document.getElementById('boton-para-buscar-pelicula').addEventListener('click', (e) => {
+botonBuscar.addEventListener('click', (e) => {
+        console.log('HOLA')
         e.preventDefault();
         const nombrePelicula = document.getElementById('nombre-pelicula-a-buscar').value;
 
@@ -23,3 +26,4 @@ document.getElementById('boton-para-buscar-pelicula').addEventListener('click', 
             generarCartaEnHTML(data);
         })
 })
+
