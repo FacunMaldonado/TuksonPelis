@@ -23,7 +23,9 @@ botonBuscar.addEventListener('click', (e) => {
         .then ((data) => {
             pelicula = data;
             console.log (data);
-            generarCartaEnHTML(data);
+            if (data.Response != 'False'){ 
+                generarCartaEnHTML(data);
+            }
         })
 })
 
