@@ -635,7 +635,7 @@
 }
 #container netflixintro [class*=helper-] .effect-lumieres .lamp-1 {
   --color: #5ddcff;
-  z: 6;
+  /* z: 6; */
   left: 0.7%;
   width: 1%;
   animation-delay: 1.27s;
@@ -1058,7 +1058,6 @@
 
 .header{
   position: relative;
-  height: 150px;
   width: 100%;
 }
 
@@ -1066,12 +1065,24 @@ nav {
   position: fixed;
   top: 0%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background: #000000;
-  /* z-index: 99999; */
+  z-index: 99999;
 }
+
+nav .search{
+  margin: 5px;
+  padding: 5px;
+  /* border: 1px solid red; */
+  background:linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+  /* margin-left: 40rem */
+  border-radius: 3px
+};
+
 nav ul {
   background: #000000;
   list-style: none;
@@ -1138,6 +1149,13 @@ body {
   background: rgb(1, 1, 1);
 }
 
+main h3{
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
 .contenedorTop5{
   padding: 5rem 2rem;
   display: flex;
@@ -1161,18 +1179,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
+  padding: 5rem;
   gap: 4rem;
 }
 
 .card img{
   width: 100%;
-  height: 80%;
+  height: 87%;
   object-fit: cover;
 }
 
 .card p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -1192,7 +1210,7 @@ body {
 .card {
   background: #191c29;
   width: 300px;
-  height: 400px;
+  height: 470px;
   padding: 3px;
   position: relative;
   border-radius: 6px;

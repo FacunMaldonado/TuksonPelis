@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/4ce980c8b0.js" crossorigin="anonymous"></script>
-    <script defer src="./scripts/top5.js"></script>
+    <!-- <script defer src="./scripts/top5.js"></script> -->
     <title>TuksonPelis</title>
 </head>
 <body>
 <div class="preload">
 
   <div id="container">
-       <netflixintro letter="T">
+      <netflixintro letter="T">
         <div class="helper-1">
           <div class="effect-brush">
             <span class="fur-31"></span>
@@ -195,29 +195,6 @@
                 <a href="#">
                   <div class="fa fa-home"></div></a>
               </li>
-              <li>
-                <a href="#"> 
-                  Peliculas</a>
-              </li>
-              <li class="sub-menu">
-                <a href="#">
-                  Series
-                  <i class="fa fa-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a href="#">
-                      Product Item</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Product Item</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Product Item</a>
-                  </li>
-                </ul>
-              </li>
               <li class="sub-menu">
                 <a href="#">
                   Generos
@@ -225,11 +202,11 @@
                 <ul>
                   <li>
                     <a href="#">
-                      Terror</a>
+                      Terror - PROXIMAMENTE</a>
                   </li>
                   <li>
                     <a href="#">
-                      Suspenso</a>
+                      Suspenso - PROXIMAMENTE</a>
                   </li>
                   <li>
                     <a href="./pages/comedia.html">
@@ -237,17 +214,22 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="./pages/prueba.html">
-                  Subscribite</a>
-              </li>
             </ul>
+            <div class="search">
+              <form id="form">
+                <input type="text" placeholder="Search" id="search" class="search">
+              </form>
+            </div>
+            <!-- <div class="search">
+              <input id="nombre-pelicula-a-buscar" placeholder="Ingrese una pelicula">
+              <button id="boton-para-buscar-pelicula">BUSCAR</button>
+            </div> -->
           </nav>
     </header>
     <main class="main">
         <div class="contenedorTop5">
             <div class="textTop5">
-                <p>Top 5</p>
+                <p>DESTACADAS</p>
             </div>
             <div class="ContainerCards">
                 <!-- ACA SE PINTAN LAS CARTAS PUSHEADAS AL ARRAY -->
@@ -263,6 +245,7 @@
   <script src="./scripts/nav.js"></script>
   <script type="module" src="./scripts/preload.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./scripts/api.js"></script>
+  <!-- <script src="./scripts/api.js"></script> -->
+  <script src="./scripts/peliculasAPI.js"></script>
 </body>
 </html>

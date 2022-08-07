@@ -18,9 +18,9 @@ Peliculas.push(new Pelicula(2,"P2","Suspenso","../images/prueba.jpeg", "1:45 hs"
 Peliculas.push(new Pelicula(3,"P3","Suspenso","../images/prueba.jpeg", "1:16 hs"));
 Peliculas.push(new Pelicula(4,"P4","Terror","../images/prueba.jpeg", "1:40 hs"));
 Peliculas.push(new Pelicula(5,"P5","Terror","../images/prueba.jpeg", "2:30 hs"));
-Peliculas.push(new Pelicula(6,"P6","Comedia","../images/comedia.jpg", "1 hs"));
-Peliculas.push(new Pelicula(7,"P7","Comedia","../images/comedia.jpg", "1:50 hs"));
-Peliculas.push(new Pelicula(8,"P8","Comedia","../images/comedia.jpg", "1:30 hs"));
+Peliculas.push(new Pelicula(6,"Tonto Y Re Tonto","Comedia","../images/tontoYreTonto.jpg", "1 HS"));
+Peliculas.push(new Pelicula(7,"Son Como Niños","Comedia","../images/sonComoNiños.jpg", "1:50 HS"));
+Peliculas.push(new Pelicula(8,"Good Burger","Comedia","../images/GoodBurger.jpg", "1:43 HS"));
 
 const PelisJSON = JSON.stringify(Peliculas);
 
