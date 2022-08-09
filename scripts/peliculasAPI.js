@@ -30,6 +30,7 @@ function getMovies(url){
 }
 
 function showMovies(data){
+    containerCards.innerHTML = '';
 
     data.forEach(movie => {
         const {title, poster_path, vote_average} = movie
